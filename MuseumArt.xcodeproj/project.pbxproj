@@ -13,6 +13,8 @@
 		996F54AC276BD8470006F724 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996F54AB276BD8470006F724 /* Preview Assets.xcassets */; };
 		996F54B3276BDF210006F724 /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54B2276BDF210006F724 /* CollectionsView.swift */; };
 		996F54B5276BDFA60006F724 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54B4276BDFA60006F724 /* CustomCollectionView.swift */; };
+		996F54B8276BE7AF0006F724 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54B7276BE7AF0006F724 /* CollectionDetailView.swift */; };
+		996F54BE276BE84B0006F724 /* ArtCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54BD276BE84B0006F724 /* ArtCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		996F54AB276BD8470006F724 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		996F54B2276BDF210006F724 /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
 		996F54B4276BDFA60006F724 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		996F54B7276BE7AF0006F724 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		996F54BD276BE84B0006F724 /* ArtCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				996F54A4276BD8460006F724 /* MuseumArtApp.swift */,
-				996F54B2276BDF210006F724 /* CollectionsView.swift */,
-				996F54A6276BD8460006F724 /* ArtworkView.swift */,
-				996F54B4276BDFA60006F724 /* CustomCollectionView.swift */,
+				996F54BC276BE8380006F724 /* Model */,
+				996F54B9276BE7EE0006F724 /* Views */,
 				996F54A8276BD8470006F724 /* Assets.xcassets */,
 				996F54AA276BD8470006F724 /* Preview Content */,
 			);
@@ -71,6 +74,49 @@
 				996F54AB276BD8470006F724 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		996F54B6276BE7930006F724 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				996F54B2276BDF210006F724 /* CollectionsView.swift */,
+				996F54B7276BE7AF0006F724 /* CollectionDetailView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		996F54B9276BE7EE0006F724 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				996F54B6276BE7930006F724 /* Collection */,
+				996F54BA276BE7FB0006F724 /* Artwork */,
+				996F54BB276BE8100006F724 /* CustomCollection */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		996F54BA276BE7FB0006F724 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				996F54A6276BD8460006F724 /* ArtworkView.swift */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		996F54BB276BE8100006F724 /* CustomCollection */ = {
+			isa = PBXGroup;
+			children = (
+				996F54B4276BDFA60006F724 /* CustomCollectionView.swift */,
+			);
+			path = CustomCollection;
+			sourceTree = "<group>";
+		};
+		996F54BC276BE8380006F724 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				996F54BD276BE84B0006F724 /* ArtCollection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +192,9 @@
 				996F54A7276BD8460006F724 /* ArtworkView.swift in Sources */,
 				996F54A5276BD8460006F724 /* MuseumArtApp.swift in Sources */,
 				996F54B3276BDF210006F724 /* CollectionsView.swift in Sources */,
+				996F54BE276BE84B0006F724 /* ArtCollection.swift in Sources */,
 				996F54B5276BDFA60006F724 /* CustomCollectionView.swift in Sources */,
+				996F54B8276BE7AF0006F724 /* CollectionDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
