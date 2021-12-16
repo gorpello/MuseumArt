@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		996F54A5276BD8460006F724 /* MuseumArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54A4276BD8460006F724 /* MuseumArtApp.swift */; };
-		996F54A7276BD8460006F724 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54A6276BD8460006F724 /* ContentView.swift */; };
+		996F54A7276BD8460006F724 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54A6276BD8460006F724 /* ArtworkView.swift */; };
 		996F54A9276BD8470006F724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996F54A8276BD8470006F724 /* Assets.xcassets */; };
 		996F54AC276BD8470006F724 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996F54AB276BD8470006F724 /* Preview Assets.xcassets */; };
+		996F54B3276BDF210006F724 /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54B2276BDF210006F724 /* CollectionsView.swift */; };
+		996F54B5276BDFA60006F724 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F54B4276BDFA60006F724 /* CustomCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		996F54A1276BD8460006F724 /* MuseumArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996F54A4276BD8460006F724 /* MuseumArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumArtApp.swift; sourceTree = "<group>"; };
-		996F54A6276BD8460006F724 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		996F54A6276BD8460006F724 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
 		996F54A8276BD8470006F724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		996F54AB276BD8470006F724 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		996F54B2276BDF210006F724 /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
+		996F54B4276BDFA60006F724 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				996F54A4276BD8460006F724 /* MuseumArtApp.swift */,
-				996F54A6276BD8460006F724 /* ContentView.swift */,
+				996F54B2276BDF210006F724 /* CollectionsView.swift */,
+				996F54A6276BD8460006F724 /* ArtworkView.swift */,
+				996F54B4276BDFA60006F724 /* CustomCollectionView.swift */,
 				996F54A8276BD8470006F724 /* Assets.xcassets */,
 				996F54AA276BD8470006F724 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996F54A7276BD8460006F724 /* ContentView.swift in Sources */,
+				996F54A7276BD8460006F724 /* ArtworkView.swift in Sources */,
 				996F54A5276BD8460006F724 /* MuseumArtApp.swift in Sources */,
+				996F54B3276BDF210006F724 /* CollectionsView.swift in Sources */,
+				996F54B5276BDFA60006F724 /* CustomCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

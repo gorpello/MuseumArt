@@ -13,7 +13,25 @@ import SwiftUI
 struct MuseumArtApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            TabView{
+                
+                CollectionsView()
+                    .tabItem {
+                        Label("Collezioni", systemImage: "list.bullet.below.rectangle")
+                    }
+                
+                ArtworkView()
+                    .tabItem {
+                        Label("Opere", systemImage: "person.crop.artframe")
+                    }
+                
+                CustomCollectionView()
+                    .tabItem {
+                        Label("Collezione Privata", systemImage: "person.crop.circle")
+                    }
+                
+            }
         }
     }
 }
