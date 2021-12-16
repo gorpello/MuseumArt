@@ -41,6 +41,7 @@ struct CollectionDetailView: View {
             }
             .buttonStyle(.borderedProminent)
             .cornerRadius(12)
+            .padding(.bottom)
         }
         
         .navigationTitle(artCollection.name)

@@ -31,14 +31,20 @@ struct CustomCollectionView: View {
                     .padding()
                 
                 // Name and Surname (Title)
-                Text("Gianluca The Bug Maker")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.pink)
-                    .padding(.bottom)
+                Group {
+                    Text("Gianluca ")
+                        .fontWeight(.bold)
+                    Text("The Bug Maker")
+                        .fontWeight(.bold)
+                }
+                .font(.title)
+                .foregroundColor(Color.pink)
+                
                 
                 // Description (Body)
                 Text("I create bugs in the code I implement, even if the project sometimes works...")
+                    .font(.headline)
+                    .padding(.top)
             }
             
             .padding()
