@@ -2,7 +2,7 @@
 //  CollectionsView.swift
 //  MuseumArt
 //
-//  Created by Gianluca Orpello for the Developer Academy on 16/12/21.
+//  Created by Gianluca Orpello and Pasquale Vittoriosi for the Developer Academy on 16/12/21.
 //
 //
 
@@ -11,6 +11,9 @@ import SwiftUI
 
 struct CollectionsView: View {
     
+    // A List of ArtCollection objects.
+    // Remember to change it with your own masterpieces!
+    // We will need this data to allow SwiftUI to create the graphical interface, using the information contained herein.
     let artCollections = [
         ArtCollection(
             name: "Collezione Farnese",
@@ -34,17 +37,20 @@ struct CollectionsView: View {
             description: "La collezione è stata donata al Museo di Capodimonte dagli eredi di Emiddio e Alfonso Mele fondatori de “I Grandi Magazzini Italiani”, inaugurati nel 1889 in via San Carlo a Napoli e attivi, a livello internazionale, nei settori della moda e del lusso, fino alla chiusura del 1932."),
     ]
     
+    // The body of our View, this is the most important property. Its task is to return a graphical interface based on the model information.
     var body: some View {
         NavigationView{
             
             List {
                 
+                // Use this image as header of the List.
                 Image("capodimonte")
                     .resizable()
                     .aspectRatio(3/2, contentMode: .fit)
                     .frame(width: UIScreen.main.bounds.width - 38)
                     .padding(.bottom)
                 
+                // For each artCollections creates a navigation link in our list that will bring the user to the detail view
                 ForEach(artCollections) { collection in
                     NavigationLink(collection.name) {
                         CollectionDetailView(artCollection: collection)
@@ -53,6 +59,8 @@ struct CollectionsView: View {
                 
             }
             .listStyle(.plain)
+            
+            // The title of the navigation bar.
             .navigationTitle(Text("Museum Art"))
         }
     }

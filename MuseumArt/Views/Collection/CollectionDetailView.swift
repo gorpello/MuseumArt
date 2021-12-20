@@ -2,7 +2,7 @@
 //  CollectionDetailView.swift
 //  MuseumArt
 //
-//  Created by Gianluca Orpello for the Developer Academy on 16/12/21.
+//  Created by Gianluca Orpello and Pasquale Vittoriosi for the Developer Academy on 16/12/21.
 //
 //
 
@@ -11,12 +11,15 @@ import SwiftUI
 
 struct CollectionDetailView: View {
     
+    // The Model of this View, this View is responsible for creating the graphical interface for a single ArtCollection object
     var artCollection: ArtCollection
     
+    // This environment variable allows us to access some features of the system. With \ .openURL, we can open a page in safari!
     @Environment(\.openURL) var openURL
     
     var body: some View {
         
+        // Vertically align the objects contained within it.
         VStack{
             
             ScrollView{
@@ -48,6 +51,7 @@ struct CollectionDetailView: View {
         
     }
     
+    // This function allows us to open a URL in safari, in this case we open the page relating to artCollection
     func openWebpage() {
         openURL(URL(string: artCollection.urlPage)!)
     }
